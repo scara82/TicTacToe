@@ -1,0 +1,219 @@
+body{
+  font-family: 'Amatic SC', cursive;
+  background-image: url(http://68.media.tumblr.com/3dc6b316f1d640af89e447f533ad04d4/tumblr_nlmfvj68AJ1qcdtsho1_400.jpg);
+}
+
+.title{
+  font-size: 30px;
+  padding: 10px 0;
+  text-align: center;
+  width: 30%;
+  margin: 5px auto;
+}
+h1, h3{
+  margin: 5px auto;
+}
+
+#rules{
+  width: 35%;
+  font-size: 20px;
+  text-align: center;
+  margin: 15px auto;
+  border: 3px dotted black;
+  background-color: mistyrose;
+}
+
+.button-rules{
+  width: 90px;
+  background-color: #ffccff;
+  border-color: inherit;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #ccff99;
+  color: black;
+}
+
+.player1-h3{
+  position: fixed;
+  left: 25px;
+  top: 80px;
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.player1-p{
+  position: fixed;
+  left: 25px;
+  top: 110px;
+  font-size: 20px;
+}
+
+.player2-h3{
+  position: fixed;
+  right: 25px;
+  top: 80px;
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.player2-p{
+  position: fixed;
+  right: 25px;
+  top: 110px;
+  font-size: 20px;
+}
+
+img.chart{
+  width: 130px;
+  height: 130px;
+}
+
+#chart,{
+  width: 50%;
+  height: 405px;
+  align-content: center;
+  margin: 2px auto;
+  padding: 5px auto;
+}
+
+.line1.chart, .line2.chart, .line3.chart{
+  width: 445px;
+  margin: 2px auto;
+  padding: 5px auto;
+}
+
+.cell {
+  width: 130px;
+  height: 130px;
+  margin: 5px;
+  display: inline-block;;
+}
+
+p{
+  font-size: 20px;
+}
+
+.fixedLeft{
+  position: fixed;
+  left: 20px;
+  width: 100px;
+}
+
+.fixedRight{
+  position: fixed;
+  right: 20px;
+  width: 100px;
+}
+.davidBowie{
+  border-radius: 100%;
+  top: 180px;
+}
+
+.prince{
+  border-radius: 100%;
+  top: 300px;
+}
+
+.georgeMicheal{
+  border-radius: 100%;
+  top: 420px;
+  width: 80px;
+}
+
+.leonardCohen{
+  border-radius: 100%;
+  top: 550px;
+}
+
+#player1Choice{
+  position: fixed;
+  top: 230px;
+  left: 200px;
+  width: 150px;
+}
+
+#player2Choice{
+  position: fixed;
+  top: 230px;
+  right: 200px;
+  width: 150px;
+}
+
+#player1ChoiceTitle{
+  position: fixed;
+  top: 170px;
+  left: 200px;
+  font-size: 25px;
+}
+
+#player2ChoiceTitle{
+  position: fixed;
+  top: 170px;
+  right: 200px;
+  font-size: 25px;
+}
+#block-1{
+  border-top: none;
+  border-bottom: 3px solid #99e6e6;
+  border-right: 3px solid #99e6e6;
+  border-left: none;
+}
+
+#block-2{
+  border-top: none;
+  border-bottom: 3px solid #99e6e6;
+  border-right: 3px solid #99e6e6;
+  border-left: 3px solid #99e6e6;
+}
+
+#block-3{
+  border-top: none;
+  border-bottom: 3px solid #99e6e6;
+  border-right: none;
+  border-left: 3px solid #99e6e6;
+}
+
+#block-4{
+  border-top: 3px solid #99e6e6;
+  border-bottom: 3px solid #99e6e6;
+  border-right: 3px solid #99e6e6;
+  border-left: none;
+}
+
+#block-5{
+  border: 3px solid #99e6e6;
+}
+
+#block-6{
+  border-top: 3px solid #99e6e6;
+  border-bottom: 3px solid #99e6e6;
+  border-right: none;
+  border-left: 3px solid #99e6e6;
+}
+
+#block-7{
+  border-top: 3px solid #99e6e6;
+  border-bottom: none;
+  border-right: 3px solid #99e6e6;
+  border-left: none;
+}
+
+#block-8{
+  border-top: 3px solid #99e6e6;
+  border-bottom: none;
+  border-right: 3px solid #99e6e6;
+  border-left: 3px solid #99e6e6;
+}
+
+#block-9{
+  border-top: 3px solid #99e6e6;
+  border-bottom: none;
+  border-right: none;
+  border-left: 3px solid #99e6e6;
+}
