@@ -1,6 +1,6 @@
 body{
   font-family: 'Amatic SC', cursive;
-  background-image: url(http://68.media.tumblr.com/3dc6b316f1d640af89e447f533ad04d4/tumblr_nlmfvj68AJ1qcdtsho1_400.jpg);
+  background-image: url(img/background.jpg);
 }
 
 .title{
@@ -37,6 +37,17 @@ h1, h3{
   color: black;
 }
 
+#newGameBtn{
+  position: fixed;
+  bottom: 5px;
+  left: 600px;
+  width: 90px;
+  border-radius:8px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  background-color: #90D4C5;
+  display: none;
+}
 .player1-h3{
   position: fixed;
   left: 25px;
@@ -123,7 +134,6 @@ p{
 .georgeMicheal{
   border-radius: 100%;
   top: 420px;
-  width: 80px;
 }
 
 .leonardCohen{
@@ -136,6 +146,7 @@ p{
   top: 230px;
   left: 200px;
   width: 150px;
+  border-radius: 100%;
 }
 
 #player2Choice{
@@ -143,6 +154,7 @@ p{
   top: 230px;
   right: 200px;
   width: 150px;
+  border-radius: 100%;
 }
 
 #player1ChoiceTitle{

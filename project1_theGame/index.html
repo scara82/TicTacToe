@@ -21,51 +21,65 @@
 
   <div id='rules'>
     <h3>Rules Rules Rules!</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p> 2016 was a very sad year...we want to celebrate our favourite singers in this way! Choose your fav and have fun! <br>
+      Player OnE starts!!!!
     <br>
-    <button class="button-rules" onclick="hideButton()">Ok, Got it!</button>
+    <button class="button-rules" onclick="hideButton(); showButton()" >Ok, Got it!</button>
      </p>
   </div>
 
 <div class='player1'>
   <h3 class='player1-h3'>Player OnE</h3>
   <p class='player1-p'>Select a caracter</p>
-  <img id='davidBowie1' class='davidBowie fixedLeft' src='img/davidbowie.jpg'>
+  <img id='davidBowie1' class='davidBowie fixedLeft' src='img/davidBowie.jpg'>
   <img id='prince1' class='prince fixedLeft' src="img/prince.jpg">
-  <img id='georgeMicheal1' class='georgeMicheal fixedLeft' src="img/georgeMicheal.png">
+  <img id='georgeMicheal1' class='georgeMicheal fixedLeft' src="img/george.jpg">
   <img id='leonardCohen1' class='leonardCohen fixedLeft' src="img/leonardCohen.png">
   <p id='player1ChoiceTitle'>Player OnE</p>
-  <img id='player1Choice' class='player1ChoicePosition' src="">
+  <img id='player1Choice' class='player1ChoicePosition' src="img/chart_3.png">
 </div>
 
   <div id="chart">
     <div class='line1 chart'>
-      <div id='block-1' class='cell'><img id='block_1'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-2' class='cell'><img id='block_2'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-3' class='cell'><img id='block_3'class="chart" src="img/chart-3.jpg" value=''></div>
+      <div id='block-1' class='cell'><img id='block_1'class="chart" src='img/background.jpg' value=''></div>
+      <div id='block-2' class='cell'><img id='block_2'class="chart" src="img/background.jpg" value=''></div>
+      <div id='block-3' class='cell'><img id='block_3'class="chart" src="img/background.jpg" value=''></div>
     </div>
     <div class='line2 chart'>
-      <div id='block-4' class='cell'><img id='block_4'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-5' class='cell'><img id='block_5'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-6' class='cell'><img id='block_6'class="chart" src="img/chart-3.jpg" value=''></div>
+      <div id='block-4' class='cell'><img id='block_4'class="chart" src="img/background.jpg" value=''></div>
+      <div id='block-5' class='cell'><img id='block_5'class="chart" src="img/background.jpg" value=''></div>
+      <div id='block-6' class='cell'><img id='block_6'class="chart" src="img/background.jpg" value=''></div>
     </div>
     <div class='line3 chart'>
-      <div id='block-7' class='cell'><img id='block_7'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-8' class='cell'><img id='block_8'class="chart" src="img/chart-3.jpg" value=''></div>
-      <div id='block-9' class='cell'><img id='block_9'class="chart" src="img/chart-3.jpg" value=''></div>
+      <div id='block-7' class='cell'><img id='block_7'class="chart" src="img/background.jpg" value=''></div>
+      <div id='block-8' class='cell'><img id='block_8'class="chart" src="img/background.jpg" value=''></div>
+      <div id='block-9' class='cell'><img id='block_9'class="chart" src="img/background.jpg" value=''></div>
     </div>
   </div>
 
   <div class='player2'>
     <h3 class='player2-h3'>Player TwO</h3>
     <p class='player2-p'>Select a caracter</p>
-    <img id='davidBowie2' class='davidBowie fixedRight'src="img/davidbowie.jpg">
+    <img id='davidBowie2' class='davidBowie fixedRight'src="img/davidBowie.jpg">
     <img id='prince2' class='prince fixedRight'src="img/prince.jpg">
-    <img id='georgeMicheal2' class='georgeMicheal fixedRight'src="img/georgeMicheal.png">
+    <img id='georgeMicheal2' class='georgeMicheal fixedRight'src="img/george.jpg">
     <img id='leonardCohen2' class='leonardCohen fixedRight' src="img/leonardCohen.png">
     <p id='player2ChoiceTitle'>Player TwO</p>
-    <img id='player2Choice' class='player2ChoicePosition' src="">
+    <img id='player2Choice' class='player2ChoicePosition' src="img/chart_3.png">
   </div>
+
+  <div id="audioHolder">
+    <audio class='audio' id='georgeMicheal_trk1' src='music/g_Freedom.mp3'></audio>
+    <audio class='audio' id='georgeMicheal_trk2' src='music/g_fastlove.mp3'></audio>
+    <audio class='audio' id='davidBowie_trk1' src="music/d_rebel.mp3"></audio>
+    <audio class='audio' id='davidBowie_trk2' src="music/d_letsDance.mp3"></audio>
+    <audio class='audio' id='prince_trk1' src="music/p_purpleRain.mp3"></audio>
+    <audio class='audio' id='prince_trk2' src="music/p_kiss.mp3"></audio>
+    <audio class='audio' id='cohen_trk1' src="music/c_yourMan.mp3"></audio>
+    <audio class='audio' id='cohen_trk2' src="music/c_dance.mp3"></audio>
+  </div>
+
+  <button id='newGameBtn'>New Game</button>
 
 <script src="app.js"></script>
 </body>
