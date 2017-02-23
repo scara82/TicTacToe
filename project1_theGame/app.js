@@ -1,5 +1,4 @@
 
-// fn to hide rules on button clicked
 function hideButton() {
     var x = document.getElementById('rules');
     if (x.style.display === 'none') {
@@ -8,8 +7,21 @@ function hideButton() {
         x.style.display = 'none';
     }
 }
-$('#newGameBtn').on('click', clearGame);
-// $('#rules').on('click', showButton);
+$('#newGameBtn').on('click', function(){
+  player1ChoiceObject = player1ChoiceObjectReset;
+  player2ChoiceObject = player2ChoiceObjectReset;
+  $('#player1Choice').attr('src', 'img/chart_3.png');
+  $('#player2Choice').attr('src', 'img/chart_3.png');
+  for (var i = 1; i < 10; i++) {
+    document.getElementById("block_" + i).src = "img/background.jpg";
+  }
+});
+
+$('#clearBoard').on('click', function(){
+  for (var i = 1; i < 10; i++) {
+    document.getElementById("block_" + i).src = "img/background.jpg";
+  }
+})
 
 function  showButton(){
   var y = document.getElementById('newGameBtn');
@@ -19,6 +31,15 @@ function  showButton(){
       y.style.display = 'block';
   }
 }
+
+// function showButtonNewBoard(){
+//   var y = document.getElementById('clearBoard');
+//   if (y.style.display === 'block') {
+//       y.style.display = 'none';
+//   } else {
+//       y.style.display = 'block';
+//   }
+// }
 
 var player1ChoiceObject = {
   singerChosed: '',
@@ -78,6 +99,8 @@ $('.player2').on('click', 'img', function() {
 });
 
 var count = 1;
+var win1Count = 0;
+var win2Count = 0;
 $('.chart').on('click','img', function(){
   if (count % 2) {
     var blockNumber= $(this).attr('id').split('_')[1];
@@ -92,6 +115,8 @@ $('.chart').on('click','img', function(){
       if (player1Bets.indexOf(winValues[i][0]) > 0 &&
           player1Bets.indexOf(winValues[i][1]) > 0 &&
           player1Bets.indexOf(winValues[i][2]) > 0) {
+            // win1Count += 1;
+            // document.getElementsByClass('player1Counter')[0].innerHTML = 'Player 1 wins ' + win1Count + ' times!'
             if (player1Bets[0] === 'georgeMicheal1') {
               if (Math.floor(Math.random() * 2) === 1) {
                 georgeWinner();
@@ -145,6 +170,8 @@ $('.chart').on('click','img', function(){
         if (player2Bets.indexOf(winValues[i][0]) > 0 &&
             player2Bets.indexOf(winValues[i][1]) > 0 &&
             player2Bets.indexOf(winValues[i][2]) > 0) {
+              // win2Count += 1;
+              // document.getElementsByClass('player2Counter')[0].innerHTML = 'Player 2 wins ' + win2Count + ' times!'
               if (player2Bets[0] === 'georgeMicheal2') {
                 georgeWinner();
                 if (Math.floor(Math.random() * 2) === 1) {
@@ -185,17 +212,6 @@ $('.chart').on('click','img', function(){
       }
   }
 })
-
-var clearGame = function(){
-    stopAudio();
-  player1ChoiceObject = player1ChoiceObjectReset;
-  player2ChoiceObject = player2ChoiceObjectReset;
-  $('#player1Choice').attr('src', 'img/chart_3.png');
-  $('#player2Choice').attr('src', 'img/chart_3.png');
-  for (var i = 1; i < 10; i++) {
-    document.getElementById("block_" + i).src = "img/background.jpg";
-  }
-}
 
 var davidWinner = function(){
   for (var i = 1; i < 10; i++) {
@@ -239,19 +255,4 @@ var cohenWinner = function(){
       document.getElementById("block_" + i).src = "img/background.jpg";
     }
   }
-}
-
-function stopAudio() {
-    var savePlayer = $('#audioHolder').html(); // Save player code
-    $('#georgeMicheal_trk1').remove();
-    $('#georgeMicheal_trk2').remove();
-    $('#davidBowie_trk1').remove();
-    $('#davidBowie_trk2').remove();
-    $('#georgeMicheal_trk1').remove();
-    $('#georgeMicheal_trk2').remove();
-    $('#prince_trk1').remove();
-    $('#prince_trk2').remove();
-    $('#cohen_trk1').remove();
-    $('#cohen_trk2').remove();  // Remove player from DOM
-    $('#audioHolder').html(savePlayer); // Restore it
 }
