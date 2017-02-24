@@ -5,7 +5,7 @@ After 3 weeks of classes on HTML, CSS, JS and JQuery this is the product of my a
 
 It was hard. Tic tac toe maybe can look like something very easy, ok, now I now, it isn't! Not for a newbie like me!
 
-I often literally spent hours on a little piece of code to just change idea and approach at the end (I had a lot of horrible ideas at the start). But I still learned a lot from my little failures..I think it is a great way of learning, but I also asked for help, DT and Kasun(my teachers) are great(thanks)!
+I often literally spent hours on a little piece of code to just change idea and approach at the end (I had a lot of horrible ideas at the start). But I still learned a lot from my little failures..I think it is a great way of learning, but I also asked for help!
 
 Technologies used
 -----------------
@@ -15,7 +15,7 @@ I realised I'm really slow, I can spend hours browsing around the web for answer
 
 The approach taken
 ------------------
-I started writing (paper and pen) and drawing my project. I started with an idea too ambitious (time, I didn't realise how much time it would take that with my skills were a really bad combination). The first idea was a Tic-tac-toe played with the face of players. It was too much. I spend 2 hours trying to find a solution for taking a picture...(ok, please don't tell me there is a very simple way...) so I changed my plans:
+I started writing (paper and pen) and drawing my project. I started with an idea very ambitious (time, I didn't realise how much time it would take that with my skills were a really bad combination). The first idea was a Tic-tac-toe played with the face of players. It was too much. I spend 2 hours trying to find a solution for taking a picture...(ok, please don't tell me there is a very simple way...) so I changed my plans:
 
 The first idea, a personalised game, was still there. I decided to combine a retro style (which I love) with one of my passion, music. Last year few cool singer died so I decided to celebrate them. You can play with their pretty faces and have a nice surprise at the end (I won't spoil it now!).
 
