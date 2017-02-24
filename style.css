@@ -5,6 +5,8 @@ body{
 .blinking{
   animation: blink 1s;
   animation-iteration-count: infinite;
+  width: 130px;
+  height: 130px;
 }
 
 @keyframes blink {
@@ -57,7 +59,7 @@ h1, h3{
 #newGameBtn{
   position: fixed;
   bottom: 5px;
-  left: 590px;
+  left: 540px;
   width: 90px;
   border-radius:8px;
   font-family: 'Amatic SC', cursive;
@@ -65,17 +67,17 @@ h1, h3{
   background-color: #90D4C5;
   display: none;
 }
-/*#clearBoardBtn{
+#clearBoardBtn{
   position: fixed;
   bottom: 5px;
-  right: 450px;
+  right: 540px;
   width: 90px;
   border-radius:8px;
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   background-color: #90D4C5;
   display: none;
-}*/
+}
 
 .player1-h3{
   position: fixed;

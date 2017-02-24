@@ -9,6 +9,7 @@ function hideButton() {
     // showButton();
     // showButtonNewBoard();
 }
+
 $('#newGameBtn').on('click', function(){
   player1ChoiceObject = player1ChoiceObjectReset;
   player2ChoiceObject = player2ChoiceObjectReset;
