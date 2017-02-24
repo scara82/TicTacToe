@@ -109,14 +109,16 @@ var win1Count = 0;
 var win2Count = 0;
 $('.chart').on('click','img', function(){
   if (count % 2) {
+    // document.getElementById('arrowPlayer1').classList.remove("arrowPlayer1Show").add('hideArrow');
+    // document.getElementById('arrowPlayer2').classList.add("arrowPlayer2Show");
     var blockNumber= $(this).attr('id').split('_')[1];
     document.getElementById("block_" + blockNumber).src = (document.getElementById('player1Choice').src);
     var index = 'turn'+ count;
     player1ChoiceObject[index]= event.target.id;
     count +=1;
+
     var player1Bets = Object.values(player1ChoiceObject);
     var winValues = Object.values(winningObj);
-
     for (var i = 0; i < winValues.length; i++) {
       if (player1Bets.indexOf(winValues[i][0]) > 0 &&
           player1Bets.indexOf(winValues[i][1]) > 0 &&
@@ -163,6 +165,8 @@ $('.chart').on('click','img', function(){
     }
   }
   else{
+      // document.getElementById('arrowPlayer2').classList.remove("hideArrow").add("arrowPlayer2Show");
+      // document.getElementById('arrowPlayer1').classList.add("hideArrow");
       var blockNumber = $(this).attr('id').split('_')[1];
       document.getElementById("block_" + blockNumber).src = (document.getElementById('player2Choice').src);
       var index = 'turn'+ count;

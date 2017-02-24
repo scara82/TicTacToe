@@ -78,7 +78,24 @@ h1, h3{
   background-color: #90D4C5;
   display: none;
 }
+.arrowPlayer1Show{
+  width: 70px;
+  position: fixed;
+  left: 150px;
+  bottom: 250px;
+}
 
+.arrowPlayer2Show{
+  width: 70px;
+  position: fixed;
+  right: 330px;
+  bottom: 250px;
+}
+
+.hideArrow{
+  diplay: none;
+  width: 0;
+}
 .player1-h3{
   position: fixed;
   left: 25px;
