@@ -32,14 +32,14 @@ function  showButton(){
   }
 }
 
-// function showButtonNewBoard(){
-//   var y = document.getElementById('clearBoard');
-//   if (y.style.display === 'block') {
-//       y.style.display = 'none';
-//   } else {
-//       y.style.display = 'block';
-//   }
-// }
+function showButtonNewBoard(){
+  var y = document.getElementById('clearBoard');
+  if (y.style.display === 'block') {
+      y.style.display = 'none';
+  } else {
+      y.style.display = 'block';
+  }
+}
 
 var player1ChoiceObject = {
   singerChosed: '',
