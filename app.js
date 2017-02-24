@@ -6,6 +6,8 @@ function hideButton() {
     } else {
         x.style.display = 'none';
     }
+    // showButton();
+    // showButtonNewBoard();
 }
 $('#newGameBtn').on('click', function(){
   player1ChoiceObject = player1ChoiceObjectReset;
@@ -14,10 +16,13 @@ $('#newGameBtn').on('click', function(){
   $('#player2Choice').attr('src', 'img/chart_3.png');
   for (var i = 1; i < 10; i++) {
     document.getElementById("block_" + i).src = "img/background.jpg";
+    document.getElementById("block_" + i).classList.remove("blinking");
+    document.getElementById("block_" + i).classList.add("chart");
+
   }
 });
 
-$('#clearBoard').on('click', function(){
+$('#clearBoardBtn').on('click', function(){
   for (var i = 1; i < 10; i++) {
     document.getElementById("block_" + i).src = "img/background.jpg";
   }
@@ -25,19 +30,19 @@ $('#clearBoard').on('click', function(){
 
 function  showButton(){
   var y = document.getElementById('newGameBtn');
-  if (y.style.display === 'block') {
+  if (y.style.display === 'inline-block') {
       y.style.display = 'none';
   } else {
-      y.style.display = 'block';
+      y.style.display = 'inline-block';
   }
 }
 
 function showButtonNewBoard(){
-  var y = document.getElementById('clearBoard');
-  if (y.style.display === 'block') {
+  var y = document.getElementById('clearBoardBtn');
+  if (y.style.display === 'inline-block') {
       y.style.display = 'none';
   } else {
-      y.style.display = 'block';
+      y.style.display = 'inline-block';
   }
 }
 
@@ -217,6 +222,7 @@ var davidWinner = function(){
   for (var i = 1; i < 10; i++) {
       if (i % 2) {
         document.getElementById("block_" + i).src = "img/davidBowie.jpg";
+        document.getElementById("block_" + i).className = "blinking";
       }
     else{
       document.getElementById("block_" + i).src = "img/background.jpg";
@@ -228,6 +234,7 @@ var princeWinner = function(){
   for (var i = 1; i < 10; i++) {
       if (i % 2) {
         document.getElementById("block_" + i).src = "img/prince.jpg";
+        document.getElementById("block_" + i).className = "blinking";
       }
     else{
       document.getElementById("block_" + i).src = "img/background.jpg";
@@ -239,6 +246,7 @@ var georgeWinner = function(){
   for (var i = 1; i < 10; i++) {
       if (i % 2) {
         document.getElementById("block_" + i).src = "img/george.jpg";
+        document.getElementById("block_" + i).className = "blinking";
       }
     else{
       document.getElementById("block_" + i).src = "img/background.jpg";
@@ -250,6 +258,7 @@ var cohenWinner = function(){
   for (var i = 1; i < 10; i++) {
       if (i % 2) {
         document.getElementById("block_" + i).src = "img/leonardCohen.png";
+        document.getElementById("block_" + i).className = "blinking";
       }
     else{
       document.getElementById("block_" + i).src = "img/background.jpg";

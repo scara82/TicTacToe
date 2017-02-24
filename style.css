@@ -2,6 +2,23 @@ body{
   font-family: 'Amatic SC', cursive;
   background-image: url(img/background.jpg);
 }
+.blinking{
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 
 .title{
   font-size: 30px;
@@ -40,7 +57,7 @@ h1, h3{
 #newGameBtn{
   position: fixed;
   bottom: 5px;
-  left: 400px;
+  left: 590px;
   width: 90px;
   border-radius:8px;
   font-family: 'Amatic SC', cursive;
@@ -48,17 +65,18 @@ h1, h3{
   background-color: #90D4C5;
   display: none;
 }
-#clearBoardBtn{
+/*#clearBoardBtn{
   position: fixed;
   bottom: 5px;
-  left: 700px;
+  right: 450px;
   width: 90px;
   border-radius:8px;
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   background-color: #90D4C5;
   display: none;
-}
+}*/
+
 .player1-h3{
   position: fixed;
   left: 25px;
@@ -96,7 +114,7 @@ img.chart{
   height: 130px;
 }
 
-#chart,{
+#chart{
   width: 50%;
   height: 405px;
   align-content: center;
