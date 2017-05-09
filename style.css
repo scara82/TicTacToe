@@ -83,6 +83,7 @@ h1, h3{
   position: fixed;
   left: 150px;
   bottom: 250px;
+  display:block;
 }
 
 .arrowPlayer2Show{
@@ -90,6 +91,7 @@ h1, h3{
   position: fixed;
   right: 330px;
   bottom: 250px;
+  display: block;
 }
 
 .hideArrow{
@@ -279,5 +281,6 @@ p{
 }
 #credits{
   position: fixed;
-  bottom: 5px;
+  bottom: 2px;
+  left: 120px;
 }

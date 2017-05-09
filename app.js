@@ -105,17 +105,16 @@ $('.player2').on('click', 'img', function() {
 });
 
 var count = 1;
-var win1Count = 0;
-var win2Count = 0;
 $('.chart').on('click','img', function(){
   if (count % 2) {
-    // document.getElementById('arrowPlayer1').classList.remove("arrowPlayer1Show").add('hideArrow');
-    // document.getElementById('arrowPlayer2').classList.add("arrowPlayer2Show");
     var blockNumber= $(this).attr('id').split('_')[1];
     document.getElementById("block_" + blockNumber).src = (document.getElementById('player1Choice').src);
     var index = 'turn'+ count;
     player1ChoiceObject[index]= event.target.id;
     count +=1;
+
+    document.getElementById('arrowPlayer1').classList.add("arrowPlayer1Show");
+    document.getElementById('arrowPlayer2').classList.remove("arrowPlayer2Show");
 
     var player1Bets = Object.values(player1ChoiceObject);
     var winValues = Object.values(winningObj);
@@ -123,8 +122,6 @@ $('.chart').on('click','img', function(){
       if (player1Bets.indexOf(winValues[i][0]) > 0 &&
           player1Bets.indexOf(winValues[i][1]) > 0 &&
           player1Bets.indexOf(winValues[i][2]) > 0) {
-            // win1Count += 1;
-            // document.getElementsByClass('player1Counter')[0].innerHTML = 'Player 1 wins ' + win1Count + ' times!'
             if (player1Bets[0] === 'georgeMicheal1') {
               if (Math.floor(Math.random() * 2) === 1) {
                 georgeWinner();
@@ -165,8 +162,6 @@ $('.chart').on('click','img', function(){
     }
   }
   else{
-      // document.getElementById('arrowPlayer2').classList.remove("hideArrow").add("arrowPlayer2Show");
-      // document.getElementById('arrowPlayer1').classList.add("hideArrow");
       var blockNumber = $(this).attr('id').split('_')[1];
       document.getElementById("block_" + blockNumber).src = (document.getElementById('player2Choice').src);
       var index = 'turn'+ count;
@@ -176,12 +171,13 @@ $('.chart').on('click','img', function(){
       var player2Bets = Object.values(player2ChoiceObject);
       var winValues = Object.values(winningObj);
 
+      document.getElementById('arrowPlayer2').classList.remove("hideArrow").add("arrowPlayer2Show");
+      document.getElementById('arrowPlayer1').classList.add("hideArrow");
+
       for (var i = 0; i < winValues.length; i++) {
         if (player2Bets.indexOf(winValues[i][0]) > 0 &&
             player2Bets.indexOf(winValues[i][1]) > 0 &&
             player2Bets.indexOf(winValues[i][2]) > 0) {
-              // win2Count += 1;
-              // document.getElementsByClass('player2Counter')[0].innerHTML = 'Player 2 wins ' + win2Count + ' times!'
               if (player2Bets[0] === 'georgeMicheal2') {
                 georgeWinner();
                 if (Math.floor(Math.random() * 2) === 1) {
